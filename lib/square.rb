@@ -5,4 +5,8 @@ class Square
   end
 
   attr_accessor :side
+
+  def area
+    @side ** 2
+  end
 end
