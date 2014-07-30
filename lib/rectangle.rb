@@ -18,7 +18,7 @@ class Rectangle
   end
 
   def perim
-    2*@length + 2*@width
+    2 * @length + 2 * @width
   end
 
 end
