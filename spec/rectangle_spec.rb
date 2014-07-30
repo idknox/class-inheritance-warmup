@@ -11,4 +11,8 @@ describe "Rectangle" do
   it "can return its area" do
     expect(rec.area).to eq(30)
   end
+
+  it "can return its perimeter" do
+    expect(rec.perim).to eq(22)
+  end
 end
