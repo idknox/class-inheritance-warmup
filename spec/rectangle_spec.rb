@@ -22,7 +22,9 @@ describe "Rectangle" do
     Rectangle.new(6, 6)
 
     expect(Rectangle.count).to eq(4)
+  end
 
+  it "can set number of objects" do
     Rectangle.count = 5
     expect(Rectangle.count).to eq(5)
   end

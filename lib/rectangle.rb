@@ -1,21 +1,17 @@
 class Rectangle
-  @@count=0
+  @count=0
+
+  class << self
+    attr_accessor :count
+  end
 
   def initialize(l, w)
     @length = l
     @width = w
-    @@count += 1
+    self.class.count += 1
   end
 
   attr_accessor :length, :width
-
-  def self.count
-    @@count
-  end
-
-  def self.count=(count)
-    @@count = count
-  end
 
   def area
     @length * @width
