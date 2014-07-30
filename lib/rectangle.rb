@@ -7,4 +7,8 @@ class Rectangle
 
   attr_accessor :l, :w
 
+  def area
+    @l * @w
+  end
+
 end
