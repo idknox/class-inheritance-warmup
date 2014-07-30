@@ -2,23 +2,23 @@ class Rectangle
   @@count=0
 
   def initialize(l, w)
-    @l = l
-    @w = w
+    @length = l
+    @width = w
     @@count += 1
   end
 
-  attr_accessor :l, :w, :count
+  attr_accessor :length, :width, :count
 
   def self.count
     @@count
   end
-  
+
   def area
-    @l * @w
+    @length * @width
   end
 
   def perim
-    2*@l + 2*@w
+    2*@length + 2*@width
   end
 
 end
