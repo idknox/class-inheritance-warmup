@@ -7,10 +7,14 @@ class Rectangle
     @@count += 1
   end
 
-  attr_accessor :length, :width, :count
+  attr_accessor :length, :width
 
   def self.count
     @@count
+  end
+
+  def self.count=(count)
+    @@count = count
   end
 
   def area

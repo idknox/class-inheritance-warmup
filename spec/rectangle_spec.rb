@@ -16,11 +16,14 @@ describe "Rectangle" do
     expect(rec.perim).to eq(22)
   end
 
-  it "can return the number of Rectangle objects created" do
+  it "can return and set the number of Rectangle objects created" do
     Rectangle.new(4, 5)
     Rectangle.new(3, 4)
     Rectangle.new(6, 6)
 
     expect(Rectangle.count).to eq(4)
+
+    Rectangle.count = 5
+    expect(Rectangle.count).to eq(5)
   end
 end
