@@ -1,16 +1,12 @@
-class Square
+class Square < Rectangle
 
   def initialize(side)
     @side = side
+    @l = side
+    @w = side
   end
 
   attr_accessor :side
 
-  def area
-    @side ** 2
-  end
 
-  def perim
-    @side * 4
-  end
 end

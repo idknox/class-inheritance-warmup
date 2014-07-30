@@ -8,7 +8,7 @@ class Rectangle
   attr_accessor :l, :w
 
   def area
-    @l * @w
+    @l * @w || @s ** 2
   end
 
   def perim
