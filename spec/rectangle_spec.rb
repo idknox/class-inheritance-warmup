@@ -17,9 +17,9 @@ describe "Rectangle" do
   end
 
   it "can return the number of Rectangle objects created" do
-    rec1 = Rectangle.new(4, 5)
-    rec2 = Rectangle.new(3, 4)
-    rec3 = Rectangle.new(6, 6)
+    Rectangle.new(4, 5)
+    Rectangle.new(3, 4)
+    Rectangle.new(6, 6)
 
     expect(Rectangle.count).to eq(4)
   end

@@ -9,6 +9,10 @@ class Rectangle
 
   attr_accessor :l, :w, :count
 
+  def self.count
+    @@count
+  end
+  
   def area
     @l * @w
   end
@@ -17,7 +21,4 @@ class Rectangle
     2*@l + 2*@w
   end
 
-  def self.count
-    @@count
-  end
 end
