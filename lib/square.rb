@@ -9,4 +9,8 @@ class Square
   def area
     @side ** 2
   end
+
+  def perim
+    @side * 4
+  end
 end

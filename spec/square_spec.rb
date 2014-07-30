@@ -10,5 +10,9 @@ describe "Square" do
   it "can return its area" do
     expect(sq.area).to eq(25)
   end
+
+  it "can return its perim" do
+    expect(sq.perim).to eq(20)
+  end
 end
 
