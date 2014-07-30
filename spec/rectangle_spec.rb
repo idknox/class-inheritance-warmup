@@ -15,4 +15,12 @@ describe "Rectangle" do
   it "can return its perimeter" do
     expect(rec.perim).to eq(22)
   end
+
+  it "can return the number of Rectangle objects created" do
+    rec1 = Rectangle.new(4, 5)
+    rec2 = Rectangle.new(3, 4)
+    rec3 = Rectangle.new(6, 6)
+
+    expect(Rectangle.count).to eq(4)
+  end
 end
